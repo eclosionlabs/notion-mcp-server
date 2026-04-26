@@ -1,0 +1,7 @@
+{
+  "name": "notion-mcp-servers",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx @notionhq/notion-mcp-server --transport http --auth-token \"$AUTH_TOKEN\""
+  }
+}
