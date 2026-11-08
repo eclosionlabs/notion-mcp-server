@@ -1,7 +1,12 @@
 {
   "name": "notion-mcp-servers",
   "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@notionhq/notion-mcp-server": "2.6.1"
+  },
   "scripts": {
-    "start": "npx @notionhq/notion-mcp-server --transport http --port 3001 & node proxy.js"
+    "start": "node --max-old-space-size=128 proxy.js"
   }
 }
